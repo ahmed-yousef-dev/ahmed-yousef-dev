@@ -50,9 +50,10 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 ## Featured Work
 
 ### 🏥 Shifaa — Healthcare Booking Platform
-**Co-Founder & Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jan 2026 – Present
+**Co-Founder & Sole Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jan 2026 – Present
 
 > Production-deployed · Android client integrated · **Currently in Google Play Store review**
+> Built for Egypt's underserved towns and villages — starting in Quesna, Menofia — where healthcare discovery is still largely offline.
 
 - Built and deployed the full backend on a **Linux VPS** (Gunicorn + Nginx + PostgreSQL).
 - Delivered **60+ REST endpoints** covering booking, scheduling, reviews, and user management.
@@ -72,6 +73,7 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 
 > ITI Capstone · Team Project · [View on GitHub →](https://github.com/ITI-Grad-Team/HR-Management-System)
 
+- Built for a **full employee-lifecycle HR platform** spanning recruitment, attendance, overtime, leave management, and payroll generation.
 - Delivered end-to-end features across Attendance (geo check-in/out), Overtime, Leave, and Payroll modules.
 - Engineered secure **RBAC** (Admin / HR / Employee) with strict DRF permissions on all state-changing actions.
 - Built real-time SPA approval flows with **optimistic UI updates** + rollback/error handling — no full page reloads.
