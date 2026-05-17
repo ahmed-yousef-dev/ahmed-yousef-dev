@@ -50,7 +50,7 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 ## Featured Work
 
 ### 🏥 Shifaa — Healthcare Booking Platform
-**Co-Founder & Sole Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jan 2026 – Present
+**Co-Founder & Sole Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jan 2026 – Present &nbsp;·&nbsp; [GitHub Repository](https://github.com/ahmed-yousef-dev/Shifaa)
 
 > Production-deployed · Android client integrated · **Currently in Google Play Store review**
 > Built for Egypt's underserved towns and villages — starting in Quesna, Menofia — where healthcare discovery is still largely offline.
@@ -64,14 +64,12 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 - Scaled async workflows with **Celery + Celery Beat + Redis** (email delivery + slot management).
 - Maintained quality with **730+ passing pytest tests** across the full backend suite.
 
-> *Code available upon request (pre-launch startup).*
-
 ---
 
 ### 📊 HERA — HR Management System
-**Full-Stack Web Application (React + Django REST Framework)** &nbsp;·&nbsp; May – Jul 2025
+**Full-Stack Web Application (React + Django REST Framework)** &nbsp;·&nbsp; May – Jul 2025 &nbsp;·&nbsp; [GitHub Repository](https://github.com/ITI-Grad-Team/HR-Management-System)
 
-> ITI Capstone · Team Project · [View on GitHub →](https://github.com/ITI-Grad-Team/HR-Management-System)
+> ITI Capstone · Team Project
 
 - Built for a **full employee-lifecycle HR platform** spanning recruitment, attendance, overtime, leave management, and payroll generation.
 - Delivered end-to-end features across Attendance (geo check-in/out), Overtime, Leave, and Payroll modules.
