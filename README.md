@@ -23,8 +23,9 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 
 **Proof by outcomes:**
 
-- **Shifaa** *(co-founder, sole backend engineer):* shipped a production backend with **60+ REST APIs** and **730+ passing pytest tests**, deployed on a **Linux VPS (Nginx + Gunicorn + PostgreSQL)** — currently **in Google Play Store review** with full Android integration.
-- **HERA** *(ITI capstone, team project):* delivered full-stack features and drove measurable backend improvements — **53% query latency reduction** and **60% API payload reduction** via ORM optimization, indexing, and serializer design.
+- **TakeWay** *(sole backend engineer):* architected a **multi-domain "Super App"** consolidating diverse services with **polymorphic data modeling** and **asynchronous push notifications** via Celery/Redis.
+- **Shifaa** *(sole backend engineer):* shipped a production backend with **60+ REST APIs** and **730+ passing tests**, deployed on a **Linux VPS** — currently **in Google Play Store review**.
+- **HERA** *(ITI capstone, team project):* delivered full-stack features and drove measurable backend improvements — **53% query latency reduction** and **90% fewer API calls** via caching, pagination, and debounced queries.
 
 ---
 
@@ -49,20 +50,29 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 
 ## Featured Work
 
-### 🏥 Shifaa — Healthcare Booking Platform
-**Co-Founder & Sole Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jan 2026 – Present &nbsp;·&nbsp; [GitHub Repository](https://github.com/ahmed-yousef-dev/Shifaa)
+### 🚀 TakeWay — Multi-Service Super App
+**Sole Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jul 2026 – Aug 2026
 
 > Production-deployed · Android client integrated · **Currently in Google Play Store review**
-> Built for Egypt's underserved towns and villages — starting in Quesna, Menofia — where healthcare discovery is still largely offline.
+> A scalable multi-domain platform aggregating food delivery, technician services, and custom orders.
 
-- Built and deployed the full backend on a **Linux VPS** (Gunicorn + Nginx + PostgreSQL).
-- Delivered **60+ REST endpoints** covering booking, scheduling, reviews, and user management.
-- Implemented **JWT + RBAC + OTP** registration and recovery across all critical flows.
-- Hardened security with **throttling**, **CSP headers**, **SSRF-safe URL validation**, **audit logging**, and proactive CVE patching.
-- Resolved concurrency bugs using **`transaction.atomic()`** and DB-level atomic updates.
-- Reduced performance seeding time **from 2–3 minutes to ~5 seconds** via bulk operations.
-- Scaled async workflows with **Celery + Celery Beat + Redis** (email delivery + slot management).
-- Maintained quality with **730+ passing pytest tests** across the full backend suite.
+- Architected a **unified "Super App" backend** consolidating e-commerce and service-booking using **polymorphic data modeling** (`GenericForeignKey`).
+- Engineered a **multi-vendor order architecture** resolving cart checkouts into parent-child orders via **ACID-compliant atomic transactions**.
+- Designed an **asynchronous push notification service** leveraging **Celery and Redis** to guarantee non-blocking, high-throughput processing.
+
+---
+
+### 🏥 Shifaa — Healthcare Booking Platform
+**Sole Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jan 2026 – May 2026 &nbsp;·&nbsp; [GitHub Repository](https://github.com/ahmed-yousef-dev/Shifaa)
+
+> Production-deployed · Android client integrated · **Currently in Google Play Store review**
+> Built for Egypt's underserved towns and villages.
+
+- Architected a scalable multi-provider platform unifying workflows with **zero code duplication** avoiding SQL JOIN overhead.
+- Orchestrated a **containerized deployment pipeline** (Docker + GitHub Actions) to a **Linux VPS** (Gunicorn + Nginx).
+- Engineered concurrency-safe workflows using **Celery, Redis, and Celery Beat** under high-concurrency workloads.
+- Conducted load/stress testing using **Locust** and maintained quality with **730+ passing pytest tests**.
+- Reduced data seeding time **from 3 minutes to ~5 seconds** (96% reduction) via bulk operations.
 
 ---
 
@@ -84,11 +94,11 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 
 | Area | Result | Method |
 |:--|--:|:--|
-| API delivery | **60+ endpoints** | Clean API design · DRF best practices |
-| Test coverage | **730+ passing tests** | pytest · engineering discipline |
-| Query performance | **53% faster** (0.19s → 0.09s) | ORM profiling · indexing · query shaping |
-| Network efficiency | **60% smaller payloads** | Serializer design · request deduplication |
-| Dev velocity | **2–3 min → ~5 sec seeding** | Bulk ops · optimized data workflows |
+| Query efficiency | **90% fewer API calls** | Server-side pagination · debounced queries · LRU+TTL caching |
+| Query performance | **53% faster** (0.19s → 0.09s) | ORM profiling · indexing · N+1 elimination |
+| Dev velocity | **96% faster seeding** (3m → 5s) | Bulk ops · optimized data workflows |
+| Code reuse | **Zero code duplication** | Polymorphism (`GenericForeignKey`) · abstract models |
+| Test coverage | **730+ passing tests** | pytest · automated CI/CD pipelines |
 
 ---
 
@@ -96,12 +106,12 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 
 | Layer | Tools |
 |:--|:--|
-| **Backend** | Python · Django · Django REST Framework · Flask |
+| **Backend** | Python · Django · Django REST Framework · FastAPI · Flask |
 | **Async** | Celery · Celery Beat · Redis |
-| **Databases** | PostgreSQL · MySQL · SQLite |
+| **Databases** | PostgreSQL · MySQL · SQL Server · MongoDB · SQLite |
 | **Frontend** | React (ES6+, Hooks) · HTML/CSS · Bootstrap 5 |
-| **DevOps** | Linux · Nginx · Gunicorn · Apache · Docker · Bash |
-| **Engineering** | SOLID/OOP · REST design · RBAC · Security hardening · Performance tuning |
+| **DevOps** | Linux · Nginx · Gunicorn · Docker · GitHub Actions (CI/CD) · Bash |
+| **Engineering** | Architecture · Concurrency · Performance Testing (Locust) · Security (OWASP, JWT, RBAC) |
 | **Languages** | Python · JavaScript · C++ · Bash |
 
 ---
@@ -113,6 +123,12 @@ Graduation project: **6-Axis AI-Based Robotic Arm Platform** — *Graded: Excell
 
 **Information Technology Institute (ITI)** — 5-month intensive full-stack program *(Mar–Jul 2025)*
 Curriculum: Django/Flask · React · PostgreSQL · Docker · Linux Administration
+
+**Certifications:**
+- [Ubuntu Linux Professional Certificate (Canonical)](https://www.linkedin.com/learning/certificates/d1da920f52e3cb65bcb7c731af2525a3213b8638bcdddfccf787a800dd08de20)
+- [Azure Essentials Professional Certificate (Microsoft)](https://www.linkedin.com/learning/certificates/82a020ab618ae9b18bcceddd577c587b3b3e39eacb5085f5a3dc68c42678b592)
+- [Docker Foundations Professional Certificate (Docker)](https://www.linkedin.com/learning/certificates/044791bcc8e33803851d43ab1f99067d62398354c6749c58f3190d494cfa56ac)
+- [Career Essentials in GitHub Professional Certificate (GitHub)](https://www.linkedin.com/learning/certificates/4aff31097956d7f440776b95cd187d03eae76fcac5ebcb5526a6a04eb9b9da07)
 
 **English:** C1 — Native-like proficiency
 
