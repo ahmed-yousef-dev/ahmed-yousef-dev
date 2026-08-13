@@ -7,6 +7,8 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Celery](https://img.shields.io/badge/Celery%20%2B%20Redis-37814A?style=flat&logo=celery&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux%20%28Nginx%20%2F%20Gunicorn%29-FCC624?style=flat&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 
 📍 Egypt &nbsp;·&nbsp; Open to **Remote** & **International Relocation**
 
@@ -19,12 +21,12 @@
 
 ## Hiring Snapshot
 
-I build **production-grade, performance-focused web systems** end-to-end: **schema → APIs → async jobs → deployment → tests**.
+I build **production-grade, performance-focused web systems** end-to-end: **schema → APIs → async jobs → CI/CD → deployment → tests**.
 
 **Proof by outcomes:**
 
 - **TakeWay** *(sole backend engineer):* architected a **multi-domain "Super App"** consolidating diverse services with **polymorphic data modeling** and **asynchronous push notifications** via Celery/Redis.
-- **Shifaa** *(sole backend engineer):* shipped a production backend with **60+ REST APIs** and **730+ passing tests**, deployed on a **Linux VPS** — currently **in Google Play Store review**.
+- **Shifaa** *(sole backend engineer):* shipped a production backend with **60+ REST APIs** and **730+ passing tests**, deployed on a **Linux VPS via Docker** — currently **in Google Play Store review**.
 - **HERA** *(ITI capstone, team project):* delivered full-stack features and drove measurable backend improvements — **53% query latency reduction** and **90% fewer API calls** via caching, pagination, and debounced queries.
 
 ---
@@ -44,7 +46,7 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 > JWT auth, RBAC, OTP flows, throttling, CSP headers, SSRF-safe validation, audit logging, proactive CVE patching.
 
 **Shipping, not just coding**
-> Linux deployment (Gunicorn / Nginx), operational readiness, disciplined test coverage, delivery follow-through.
+> Automated CI/CD pipelines (GitHub Actions), containerized deployment (Docker / Linux / Nginx / Gunicorn), operational readiness, delivery follow-through.
 
 ---
 
@@ -69,7 +71,7 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 > Built for Egypt's underserved towns and villages.
 
 - Architected a scalable multi-provider platform unifying workflows with **zero code duplication** avoiding SQL JOIN overhead.
-- Orchestrated a **containerized deployment pipeline** (Docker + GitHub Actions) to a **Linux VPS** (Gunicorn + Nginx).
+- Orchestrated an **automated CI/CD deployment pipeline** (Docker + GitHub Actions) to a **Linux VPS** (Gunicorn + Nginx).
 - Engineered concurrency-safe workflows using **Celery, Redis, and Celery Beat** under high-concurrency workloads.
 - Conducted load/stress testing using **Locust** and maintained quality with **730+ passing pytest tests**.
 - Reduced data seeding time **from 3 minutes to ~5 seconds** (96% reduction) via bulk operations.
