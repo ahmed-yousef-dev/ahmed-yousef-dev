@@ -25,13 +25,13 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 
 **Proof by outcomes:**
 
-- **TakeWay** *(sole backend engineer):* architected a **multi-domain "Super App"** consolidating diverse services with **polymorphic data modeling** and **asynchronous push notifications** via Celery/Redis.
-- **Shifaa** *(sole backend engineer):* shipped a production backend with **60+ REST APIs** and **730+ passing tests**, deployed on a **Linux VPS via Docker** — currently **in Google Play Store review**.
-- **HERA** *(ITI capstone, team project):* delivered full-stack features and drove measurable backend improvements — **53% query latency reduction** and **90% fewer API calls** via caching, pagination, and debounced queries.
+- **TakeWay** *(sole backend engineer):* own the backend architecture of a platform combining **multi-vendor commerce, ride booking, and home services**, including **concurrency-safe wallet operations**, **atomic multi-vendor checkout**, and **event-driven workflows**.
+- **Shifaa** *(backend engineer):* architected and deployed an extensible **multi-provider healthcare platform for doctors, laboratories, and pharmacies**, delivering 60+ secure REST APIs, 730+ automated tests, and a **Docker-based GitHub Actions CI/CD pipeline**.
+- **HERA** *(full-stack engineer on a six-person team):* delivered workflows across attendance, overtime, leave, and payroll while reducing **API latency by 53%**, payload size by **60%**, and request volume by up to **90%**.
 
 ---
 
-## What I'm Great At
+## Core Engineering Strengths
 
 **Backend architecture that stays clean as the product grows**
 > SOLID design, provider-style extensibility, clear boundaries, maintainable APIs.
@@ -52,34 +52,32 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 
 ## Featured Work
 
-### 🚀 TakeWay — Multi-Service Super App
-**Sole Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jul 2026 – Aug 2026
+### TakeWay — Multi-Vendor Commerce, Ride Booking & Home Services Platform
+**Sole Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jul 2026 – Present
 
-> Production-deployed · Android client integrated · **Currently in Google Play Store review**
-> A scalable multi-domain platform aggregating food delivery, technician services, and custom orders.
+> A multi-service platform combining multi-vendor commerce, ride booking, and home services for underserved communities in Egypt.
 
-- Architected a **unified "Super App" backend** consolidating e-commerce and service-booking using **polymorphic data modeling** (`GenericForeignKey`).
-- Engineered a **multi-vendor order architecture** resolving cart checkouts into parent-child orders via **ACID-compliant atomic transactions**.
-- Designed an **asynchronous push notification service** leveraging **Celery and Redis** to guarantee non-blocking, high-throughput processing.
-
----
-
-### 🏥 Shifaa — Healthcare Booking Platform
-**Sole Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jan 2026 – May 2026 &nbsp;·&nbsp; [GitHub Repository](https://github.com/ahmed-yousef-dev/Shifaa)
-
-> Production-deployed · Android client integrated · **Currently in Google Play Store review**
-> Built for Egypt's underserved towns and villages.
-
-- Architected a scalable multi-provider platform unifying workflows with **zero code duplication** avoiding SQL JOIN overhead.
-- Orchestrated an **automated CI/CD deployment pipeline** (Docker + GitHub Actions) to a **Linux VPS** (Gunicorn + Nginx).
-- Engineered concurrency-safe workflows using **Celery, Redis, and Celery Beat** under high-concurrency workloads.
-- Conducted load/stress testing using **Locust** and maintained quality with **730+ passing pytest tests**.
-- Reduced data seeding time **from 3 minutes to ~5 seconds** (96% reduction) via bulk operations.
+- Engineered wallet credits, debits, and refunds using **PostgreSQL row-level locking**, atomic transactions, and database constraints, with every balance change preserved in an **immutable audit ledger**.
+- Architected **multi-vendor checkout** that partitions a single cart into vendor-specific suborders within one atomic transaction while preserving historical invoices through immutable product, price, and discount snapshots.
+- Decoupled order and ride events from delivery through an **internal event bus and Celery/Redis workers**, offloading FCM notifications, OTP delivery, and image processing while persisting in-app notifications.
 
 ---
 
-### 📊 HERA — HR Management System
-**Full-Stack Web Application (React + Django REST Framework)** &nbsp;·&nbsp; May – Jul 2025 &nbsp;·&nbsp; [GitHub Repository](https://github.com/ITI-Grad-Team/HR-Management-System)
+### Shifaa — Multi-Provider Healthcare Booking Platform
+**Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jan 2026 – May 2026 &nbsp;·&nbsp; [GitHub Repository](https://github.com/ahmed-yousef-dev/Shifaa)
+
+> Shifaa is a scalable multi-provider healthcare booking platform designed to digitize offline medical services for smaller cities and underserved regions in Egypt.
+
+- Architected a scalable and extensible multi-provider platform using abstract models and `GenericForeignKey`, unifying booking workflows (doctors, labs, pharmacies) with zero code duplication (DRY) while avoiding the SQL JOIN overhead of multi-table inheritance to seamlessly support future provider types.
+- Orchestrated a containerized deployment pipeline using **Docker and GitHub Actions CI/CD**, ensuring reproducible builds across a Linux VPS (Nginx, Gunicorn), while delivering **60+ secure REST APIs** (JWT, RBAC, OTP).
+- Engineered asynchronous, concurrency-safe workflows using **Celery, Redis, and Celery Beat**, enforcing transactional integrity and eliminating race conditions in booking and scheduling under high-concurrency workloads.
+- Conducted load, stress, and spike testing using **Locust**, identifying API bottlenecks, payload inefficiencies, and scalability limitations through performance monitoring and endpoint-level analysis.
+- Guaranteed platform reliability and security by implementing **730+ automated tests** (pytest) and OWASP-aligned hardening, while optimizing bulk database operations to reduce data seeding time by **96%** (from 3 mins to 5s).
+
+---
+
+### HERA — HR Management System
+**Full-Stack Software Engineer (React + Django REST Framework)** &nbsp;·&nbsp; May – Jul 2025 &nbsp;·&nbsp; [GitHub Repository](https://github.com/ITI-Grad-Team/HR-Management-System)
 
 > ITI Capstone · Team Project
 
@@ -136,7 +134,7 @@ Curriculum: Django/Flask · React · PostgreSQL · Docker · Linux Administratio
 
 ---
 
-## How to Evaluate Me Quickly
+## Technical Discussion Areas
 
 If you're a hiring team running a technical screen, here's where I'm strongest:
 
