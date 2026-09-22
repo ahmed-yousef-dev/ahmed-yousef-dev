@@ -5,10 +5,13 @@
 ![Django](https://img.shields.io/badge/Django%20REST%20Framework-092E20?style=flat&logo=django&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![Celery](https://img.shields.io/badge/Celery%20%2B%20Redis-37814A?style=flat&logo=celery&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux%20%28Nginx%20%2F%20Gunicorn%29-FCC624?style=flat&logo=linux&logoColor=black)
+![Async Jobs](https://img.shields.io/badge/Async_Jobs-Celery_+_Redis-37814A?style=flat&logo=celery&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white)<br>
+![Deployment](https://img.shields.io/badge/Deployment-Linux,_Nginx,_Gunicorn-FCC624?style=flat&logo=linux&logoColor=white)
+![Automated Testing](https://img.shields.io/badge/Automated_Testing-pytest-0A9EDC?style=flat&logo=pytest&logoColor=white)
+![Load Testing](https://img.shields.io/badge/Load_Testing-Locust-4CAF50?style=flat&logo=locust&logoColor=white)
+![Security](https://img.shields.io/badge/Security-OWASP_Top_10-000000?style=flat&logo=owasp&logoColor=white)
 
 📍 Egypt &nbsp;·&nbsp; Open to **Remote** & **International Relocation**
 
@@ -104,15 +107,14 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 
 ## Tech Stack
 
-| Layer | Tools |
+| Domain | Technologies |
 |:--|:--|
 | **Backend** | Python · Django · Django REST Framework · FastAPI · Flask |
-| **Async** | Celery · Celery Beat · Redis |
-| **Databases** | PostgreSQL · MySQL · SQL Server · MongoDB · SQLite |
-| **Frontend** | React (ES6+, Hooks) · HTML/CSS · Bootstrap 5 |
-| **DevOps** | Linux · Nginx · Gunicorn · Docker · GitHub Actions (CI/CD) · Bash |
-| **Engineering** | Architecture · Concurrency · Performance Testing (Locust) · Security (OWASP, JWT, RBAC) |
-| **Languages** | Python · JavaScript · C++ · Bash |
+| **Databases & Caching** | PostgreSQL · Redis · MySQL · SQL Server · MongoDB · SQLite |
+| **Async & Messaging** | Celery · Celery Beat · Redis |
+| **Testing & Security** | pytest (Unit & Integration) · Locust (Load & Stress) · OWASP Top 10 · JWT · RBAC |
+| **Frontend** | React (Hooks, ES6+) · HTML5 · CSS3 · Bootstrap 5 |
+| **DevOps & Infrastructure** | Docker · GitHub Actions (CI/CD) · Linux (Ubuntu) · Nginx · Gunicorn · Bash |
 
 ---
 
