@@ -7,7 +7,7 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Async Jobs](https://img.shields.io/badge/Async_Jobs-Celery_+_Redis-37814A?style=flat&logo=celery&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white)<br>
+![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 ![Deployment](https://img.shields.io/badge/Deployment-Linux,_Nginx,_Gunicorn-FCC624?style=flat&logo=linux&logoColor=white)
 ![Automated Testing](https://img.shields.io/badge/Automated_Testing-pytest-0A9EDC?style=flat&logo=pytest&logoColor=white)
 ![Load Testing](https://img.shields.io/badge/Load_Testing-Locust-4CAF50?style=flat&logo=locust&logoColor=white)
@@ -67,7 +67,7 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 ---
 
 ### Shifaa — Multi-Provider Healthcare Booking Platform
-**Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jan 2026 – May 2026 &nbsp;·&nbsp; [GitHub Repository](https://github.com/ahmed-yousef-dev/Shifaa)
+**Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jan 2026 – May 2026
 
 > Shifaa is a scalable multi-provider healthcare booking platform designed to digitize offline medical services for smaller cities and underserved regions in Egypt.
 
