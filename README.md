@@ -28,9 +28,10 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 
 **Proof by outcomes:**
 
-- **TakeWay** *(sole backend engineer):* own the backend architecture of a platform combining **multi-vendor commerce, ride booking, and home services**, including **concurrency-safe wallet operations**, **atomic multi-vendor checkout**, and **event-driven workflows**.
-- **Shifaa** *(backend engineer):* architected and deployed an extensible **multi-provider healthcare platform for doctors, laboratories, and pharmacies**, delivering 60+ secure REST APIs, 730+ automated tests, and a **Docker-based GitHub Actions CI/CD pipeline**.
-- **HERA** *(full-stack engineer on a six-person team):* delivered workflows across attendance, overtime, leave, and payroll while reducing **API latency by 53%**, payload size by **60%**, and request volume by up to **90%**.
+- **Trend Software** *(Software Engineer &nbsp;·&nbsp; Jan 2026 – Present):* Architected and shipped two production platforms:
+  - **TakeWay** *(sole backend engineer):* own the backend architecture of a platform combining **multi-vendor commerce, ride booking, and home services**, including **concurrency-safe wallet operations**, **atomic multi-vendor checkout**, and **event-driven workflows**.
+  - **Shifaa** *(backend engineer):* architected and deployed an extensible **multi-provider healthcare platform for doctors, laboratories, and pharmacies**, delivering 60+ secure REST APIs, 730+ automated tests, and a **Docker-based GitHub Actions CI/CD pipeline**.
+- **HERA** *(full-stack engineer on a 6-engineer team &nbsp;·&nbsp; ITI Capstone):* delivered workflows across attendance, overtime, leave, and payroll while reducing **API latency by 53%**, payload size by **60%**, and request volume by up to **90%**.
 
 ---
 
@@ -55,41 +56,53 @@ I build **production-grade, performance-focused web systems** end-to-end: **sche
 
 ## Featured Work
 
-### TakeWay — Multi-Vendor Commerce, Ride Booking & Home Services Platform
-**Sole Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jul 2026 – Present
+### Trend Software
+**Software Engineer** &nbsp;·&nbsp; Jan 2026 – Present  
+> Trend Software is a software house company developing custom digital solutions, where I architected and built two production systems: TakeWay and Shifaa.
 
-> A multi-service platform combining multi-vendor commerce, ride booking, and home services for underserved communities in Egypt.
+#### 1. TakeWay — Multi-Vendor Commerce, Ride Booking & Home Services Platform
+**Role:** Sole Backend Engineer
 
-- Engineered wallet credits, debits, and refunds using **PostgreSQL row-level locking**, atomic transactions, and database constraints, with every balance change preserved in an **immutable audit ledger**.
-- Architected **multi-vendor checkout** that partitions a single cart into vendor-specific suborders within one atomic transaction while preserving historical invoices through immutable product, price, and discount snapshots.
-- Decoupled order and ride events from delivery through an **internal event bus and Celery/Redis workers**, offloading FCM notifications, OTP delivery, and image processing while persisting in-app notifications.
+> Combines multi-vendor commerce, ride booking, and home services for underserved communities in Egypt. Own the backend architecture through deployment.
+
+- Engineered wallet credits, debits, and refunds using **PostgreSQL row-level locking** and atomic transactions, enforcing non-negative balances through database constraints and recording balance changes in an **immutable audit ledger**.
+- Architected **multi-vendor checkout** that partitions a single cart into vendor-specific suborders within an atomic transaction, preserving historical invoices through **immutable snapshots** of product details, prices, and promotional discounts.
+- Decoupled order and ride events from notification delivery via an **internal event bus and Celery/Redis workers**, offloading FCM notifications, OTP delivery, and image processing while persisting in-app notifications in **PostgreSQL**.
+
+**Stack & Architecture:**  
+Backend: Django, DRF · DB: PostgreSQL · Async: Celery, Redis · Infra: Linux VPS, Nginx, Gunicorn · Architecture: Multi-Vendor Commerce, Concurrency Control, Event-Driven Architecture
 
 ---
 
-### Shifaa — Multi-Provider Healthcare Booking Platform
-**Backend Engineer (Django REST Framework)** &nbsp;·&nbsp; Jan 2026 – May 2026
+#### 2. Shifaa — Multi-Provider Healthcare Booking Platform
+**Role:** Backend Engineer
 
-> Shifaa is a scalable multi-provider healthcare booking platform designed to digitize offline medical services for smaller cities and underserved regions in Egypt.
+> A scalable multi-provider healthcare booking platform designed to digitize offline medical services for smaller cities and underserved regions in Egypt.
 
-- Architected a scalable and extensible multi-provider platform using abstract models and `GenericForeignKey`, unifying booking workflows (doctors, labs, pharmacies) with zero code duplication (DRY) while avoiding the SQL JOIN overhead of multi-table inheritance to seamlessly support future provider types.
+- Architected a scalable and extensible multi-provider platform using abstract models and `GenericForeignKey`, unifying booking workflows (doctors, labs, pharmacies) with **zero code duplication (DRY)** while avoiding the SQL JOIN overhead of multi-table inheritance to seamlessly support future provider types.
 - Orchestrated a containerized deployment pipeline using **Docker and GitHub Actions CI/CD**, ensuring reproducible builds across a Linux VPS (Nginx, Gunicorn), while delivering **60+ secure REST APIs** (JWT, RBAC, OTP).
 - Engineered asynchronous, concurrency-safe workflows using **Celery, Redis, and Celery Beat**, enforcing transactional integrity and eliminating race conditions in booking and scheduling under high-concurrency workloads.
 - Conducted load, stress, and spike testing using **Locust**, identifying API bottlenecks, payload inefficiencies, and scalability limitations through performance monitoring and endpoint-level analysis.
 - Guaranteed platform reliability and security by implementing **730+ automated tests** (pytest) and OWASP-aligned hardening, while optimizing bulk database operations to reduce data seeding time by **96%** (from 3 mins to 5s).
 
+**Stack & Architecture:**  
+Backend: Django, DRF · DB: PostgreSQL, Redis · Async: Celery, Celery Beat · Infra: Docker, GitHub Actions, Ubuntu, Nginx, Gunicorn · Testing: Locust, pytest · Security: OWASP Top 10, RBAC, JWT, OTP
+
 ---
 
 ### HERA — HR Management System
-**Full-Stack Software Engineer (React + Django REST Framework)** &nbsp;·&nbsp; May – Jul 2025 &nbsp;·&nbsp; [GitHub Repository](https://github.com/ITI-Grad-Team/HR-Management-System)
+**Full-Stack Software Engineer** &nbsp;·&nbsp; ITI Capstone (6-Engineer Team) &nbsp;·&nbsp; May 2025 – Jul 2025 &nbsp;·&nbsp; [GitHub Repository](https://github.com/ITI-Grad-Team/HR-Management-System)
 
-> ITI Capstone · Team Project
+> HR management system supporting Admin/HR/Employee workflows across recruitment, onboarding, geo-attendance, approvals, and payroll. Owned full-stack (frontend + backend) design and delivery of Attendance, Overtime, Leave, and Payroll modules.
 
-- Built for a **full employee-lifecycle HR platform** spanning recruitment, attendance, overtime, leave management, and payroll generation.
-- Delivered end-to-end features across Attendance (geo check-in/out), Overtime, Leave, and Payroll modules.
-- Engineered secure **RBAC** (Admin / HR / Employee) with strict DRF permissions on all state-changing actions.
-- Built real-time SPA approval flows with **optimistic UI updates** + rollback/error handling — no full page reloads.
-- Optimized heavy endpoints using `select_related()`, `only()`, indexing, and dedicated lightweight serializers.
-- Achieved **53% query latency reduction** (0.19s → 0.09s) and **60% API payload reduction**.
+- Designed and implemented an **auditable payroll system** computing monthly salaries from attendance signals (lateness, absences, overtime), persisting **immutable per-period snapshots** to ensure historical accuracy and data integrity.
+- Reduced Salary Record generation from **3–5s to near-instant** and cut API calls by **90%** by replacing full dataset preloading with server-side paginated search and **300ms debounced queries**.
+- Optimized attendance views using **LRU + TTL caching**, debounced filters, and request cancellation, reducing API calls by **75%** and improving initial load time by **70%**.
+- Reduced Casual Leave API latency by **53%** (0.19s to 0.09s) and payload size by **60%** (15KB to 6KB) via indexed queries, N+1 query elimination, and lean serializers.
+- Engineered attendance-to-leave workflows with **RBAC**, enforcing consistent salary adjustments and leave quotas, eliminating cross-module inconsistencies across attendance, leave, and payroll domains.
+
+**Stack & Architecture:**  
+Backend: Django, DRF · Frontend: React · DB: PostgreSQL, Supabase · Security: JWT, OAuth, RBAC, Email Verification · Performance: Query optimization, indexed queries, LRU+TTL caching, server-side pagination, debounced search
 
 ---
 

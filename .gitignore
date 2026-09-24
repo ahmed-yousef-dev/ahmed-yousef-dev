@@ -1,0 +1,17 @@
+# Operating System & Editor Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+
+# Ignore tool files
+.geminiignore
+.ignore
+
+# Backups and temporary files
+*.bak
+*.tmp
+*.zip
+
+# Project Specific
+docs/
